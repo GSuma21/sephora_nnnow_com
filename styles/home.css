@@ -245,3 +245,34 @@ body {
     width: 100%;
     height: 60%;
 }
+#back-forwrd1 {
+    display: flex;
+    justify-content: space-between;
+    margin: -25% -1% 0%;
+}
+#back-forwrd2 {
+    display: flex;
+    justify-content: space-between;
+    margin: -35% 0% 0% -1%;
+}
+#back-forwrd3 {
+    display: flex;
+    justify-content: space-between;
+    margin: -20% -1% 0%;
+}
+#back1,
+#back2,
+#back3 {
+    width: 20px;
+}
+#forwrd1,
+#forwrd2,
+#forwrd3 {
+    width: 20px;
+}
+
+@media (max-width: 1200px) {
+    * {
+        background-color: black;
+    }
+}
