@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s10 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.s10 .dd {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.s10 .dd p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 18px;
+    color: #656565;
+}
+
+.s10 .dd h3 {
+    margin-top: 18px;
+}
+
+.s10 .d1 {
+    background: #f2f2f2;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.s10 .d1 h1 {
+    letter-spacing: 3px;
+    font-size: 1.33rem;
+}
+
+.s10 .d1 .subs {
+    position: relative;
+    margin: 20px auto;
+    width: 36%;
+    background: #fff;
+    height: 40px;
+}
+
+.s10 .d1 .subs .subsinput {
+    position: absolute;
+    left: 0;
+    width: 67%;
+    border: none;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    outline: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.s10 .d1 .subs .subsbtn {
+    position: absolute;
+    right: 0;
+    width: 34.5%;
+    background: #000;
+    height: 100%;
+    color: #fff;
+    border: none;
+}
+
+.s10 .d2 p {
+    margin-top: 25px;
+}
+
+.s10 .d3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.s10 .d3 p {
+    font-size: 18px;
+    color: #000;
+}
+
+.s10 .d4 {
+    margin: 30px auto;
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 21px;
+}
+.s10 .d4 i:hover{
+    cursor: pointer;
+    color: #ff3399;
+}
+
+.s10 .d5 a,
+.s10 .d6 a {
+    text-decoration: none;
+    color: #000;
+    line-height: 30px;
+}
+
+.s10 .d5 a:hover {
+    color: #ff3399;
+}
+
+.s10 .d6 a:hover {
+    color: #ff3399;
+}
+.s10 .d3 p:hover {
+    color: #ff3399;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.s10 .d6 h3 {
+    margin-top: 25px;
+}
+@media (max-width:760px) {
+    .s10 .dd {
+        width: 100%;
+    }
+    .s10 .d1 h1 {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    .s10 .d1 .subs {
+        width: 66%;
+    }
+    .s10 .d3 {
+        width: 80%;
+    }
+    .s10 .d3 p {
+        font-size: 16px;
+    }
+    .s10 .d4 {
+        width: 190px;
+    }
+}
+@media (max-width:480px) {
+    .s10 .d1 .subs {
+        width: 100%;
+    }
+    .s10 .d3 {
+        width: 100%;
+    }
+}
