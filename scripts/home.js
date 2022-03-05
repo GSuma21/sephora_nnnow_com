@@ -58,9 +58,28 @@ const showData_i = (i) => {
         card.setAttribute("class", "prod");
         card.setAttribute("id", data[i].id);
 
-        let str = `<img
-                        src="${data[i].image1}"
-                    />
+        let str = `<div class="for_img">
+                        <img
+                            class="p_img"
+                            src="${data[i].image1}"
+                        />
+                        <div class="show">
+                            <div class="shopnow">
+                                <img
+                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
+                                    alt=""
+                                />
+                                <h3>SHOP </br> NNNOW</h3>
+                            </div>
+                            <div class="fav">
+                                <img
+                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
+                                    alt=""
+                                />
+                                <h3>FAVORITE</h3>
+                            </div>
+                        </div>
+                    </div>
                     <div class="offer">
                         <img
                             src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
@@ -71,8 +90,7 @@ const showData_i = (i) => {
                     <p>${data[i].title}</p>
                     <p>Rs. ${data[i++].price}</p>
                     <p>
-                        Buy Worth 4500 From Sephora & Exclusives And Get A
-                        Scented Candle Free
+                        2 more offers
                     </p>`;
         card.innerHTML = str;
         prodBox.append(card);
@@ -90,9 +108,28 @@ const showData_j = (j) => {
         card.setAttribute("class", "prod1");
         card.setAttribute("id", data[j].id);
 
-        let str = `<img
-                        src="${data[j].image1}"
-                    />
+        let str = `<div class="for_img">
+                        <img
+                            class="p_img"
+                            src="${data[j].image1}"
+                        />
+                        <div class="show">
+                            <div class="shopnow">
+                                <img
+                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
+                                    alt=""
+                                />
+                                <h3>SHOP </br> NNNOW</h3>
+                            </div>
+                            <div class="fav">
+                                <img
+                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
+                                    alt=""
+                                />
+                                <h3>FAVORITE</h3>
+                            </div>
+                        </div>
+                    </div>
                     <div class="offer">
                         <img
                             src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
@@ -103,8 +140,7 @@ const showData_j = (j) => {
                     <p>${data[j].title}</p>
                     <p>Rs. ${data[j++].price}</p>
                     <p>
-                        Buy Worth 4500 From Sephora & Exclusives And Get A
-                        Scented Candle Free
+                        2 more offers
                     </p>`;
         card.innerHTML = str;
         prodBox.append(card);
@@ -119,12 +155,31 @@ const showData_k = (k) => {
     // console.log(data);
     for (let y = 0; y < 6; y++) {
         let card = document.createElement("div");
-        card.setAttribute("class", "prod1");
+        card.setAttribute("class", "prod");
         card.setAttribute("id", data[k].id);
 
-        let str = `<img
-                        src="${data[k].image1}"
-                    />
+        let str = `<div class="for_img">
+                        <img
+                            class="p_img"
+                            src="${data[k].image1}"
+                        />
+                        <div class="show">
+                            <div class="shopnow">
+                                <img
+                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
+                                    alt=""
+                                />
+                                <h3>SHOP </br> NNNOW</h3>
+                            </div>
+                            <div class="fav">
+                                <img
+                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
+                                    alt=""
+                                />
+                                <h3>FAVORITE</h3>
+                            </div>
+                        </div>
+                    </div>
                     <div class="offer">
                         <img
                             src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
@@ -135,8 +190,7 @@ const showData_k = (k) => {
                     <p>${data[k].title}</p>
                     <p>Rs. ${data[k++].price}</p>
                     <p>
-                        Buy Worth 4500 From Sephora & Exclusives And Get A
-                        Scented Candle Free
+                        2 more offers
                     </p>`;
         card.innerHTML = str;
         prodBox.append(card);
@@ -181,3 +235,8 @@ document.getElementById("forwrd2").addEventListener("click", forwrd2);
 document.getElementById("back2").addEventListener("click", bak2);
 document.getElementById("forwrd1").addEventListener("click", forwrd1);
 document.getElementById("back1").addEventListener("click", bak1);
+
+document.getElementsByClassName("prod").addEventListener("click", see);
+function see() {
+    console.log(10);
+}
