@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face</title>
+    <link rel="stylesheet" href="./style/facestyle.css">
+</head>
+<body>
+    <div id="contains">
+        <div id="co1">
+            <div id="co11">
+            <div><h1>Categories</h1></div>
+            <div> <label for="Foundation" > <input id="c1" type="checkbox" name="Foundation" ><a href="found.html"> Foundation</a></label></div>
+            <div> <label for="Foundation"> <input id="c1" type="checkbox" name="Foundation" > <a href="found.html">Concealer</a></label></div>
+            <div> <label for="Foundation"> <input id="c1" type="checkbox" name="Foundation" ><a href="found.html"> Face Primer</a></label></div>
+            <div> <label for="Foundation" > <input id="c1" type="checkbox" name="Foundation" > <a href="found.html">Face Brushes</a></label></div>
+            <div> <label for="Foundation"> <input id="c1" type="checkbox" name="Foundation" ><a href="found.html">Face Powder</a></label></div>
+            <div> <label for="Foundation" > <input id="c1" type="checkbox" name="Foundation" > <a href="found.html">Highlighter</a></label></div>
+            <div> <label for="Foundation" > <input id="c1" type="checkbox" name="Foundation" > <a href="found.html">BB Cream & CC Cream</a></label></div>
+            <div> <label for="Foundation"> <input id="c1" type="checkbox" name="Foundation" > <a href="found.html">Makeup Palette</a></label></div>
+        </div>
+        <div id="co12">
+
+
+        </div>
+
+
+        </div>
+
+        <div id="co2">
+            <div id="sort">
+                <div id="sort1">SORT</div>
+                <div id="sort2">
+                <select name="" id="">
+                    <option value="">Popularity</option>
+                    <option value="">Newest</option>
+                    <option value="">Price:Low to High</option>
+                    <option value="">Price:High to Lowy</option>
+                </select>
+               </div>
+
+            </div>
+            <br>
+            <br><br><br>
+
+            <div id="second">
+            </div>
+
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
+<script>
+    let s = document.getElementById("second");
+   
+    async function getdata() {
+    try {
+      let res = await fetch(`./product_data.json`)
+      let data = await res.json();
+      console.log(data.Face_Foundation_Cream)
+       displaydata(data.Face_Foundation_Cream)
+       
+      
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  function displaydata(data) {
+    second.innerText = ""
+  for(let i=1;i<data.length;i++){
+    let pict = document.createElement("div")
+    pict.setAttribute("id","pict1")
+    let offersDiv = document.createElement("div")
+      offersDiv.setAttribute("id", "offersDiv")
+    let img = document.createElement("img");
+    let price = document.createElement("p")
+    price.setAttribute("id","price1")
+    let img1 = document.createElement("img");
+    img1.setAttribute("class","img1offer")
+    let offer = document.createElement("p")
+    offer.setAttribute("id","offer1")
+    let off = document.createElement("p")
+
+    let brand = document.createElement("p")
+
+    let alltext= document.createElement("div")
+    alltext.setAttribute("id","all1")
+    
+
+
+      
+    img1.src = `https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png`
+
+      // img.src = data[i].image1;
+      // let title = document.createElement("p");
+      // title.textContent = data[i].title;
+      // price.textContent = data[i].price;
+      // offer.textContent = "offer";
+      // off.textContent = "  2 more offers";
+      // brand.textContent = data[i].brand;
+
+      // alltext.append(title,brand,img1,offer,price,"rupees", off)
+    
+      // pict.append(img,alltext);
+
+      // s.append(pict);
+      img.src = data[i].image1;
+      let title = document.createElement("p");
+      title.textContent = data[i].title;
+      price.textContent = data[i].price;
+      offer.textContent = "offer";
+      off.textContent = "  2 more offers";
+      brand.textContent = data[i].brand;
+      offersDiv.append(img1,offer)
+      alltext.append(title, brand, offersDiv, price, "rupees", off)
+
+      pict.append(img, alltext);
+
+      s.append(pict);
+   
+
+      
+
+  }
+
+
+
+
+}
+
+getdata();
+
+</script>

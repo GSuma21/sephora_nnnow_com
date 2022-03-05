@@ -1,0 +1,173 @@
+/* #contains{
+    display: flex;
+    flex-direction: row;
+}
+#co1{
+    width: 25%;
+
+}
+#co2{
+    
+    width: 75%;
+
+   
+
+}
+#sort{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+#sort1,#sort2{
+    padding: 10px;
+}
+#second{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto ;
+   
+    
+    
+}
+img{
+    height: 263px;
+    width: 203px;
+}
+
+
+.img1offer{
+    height: 24px;
+    width: 24px;
+    text-align: center; 
+}
+#offer1{
+    display: inline-block;
+    color: red;
+    padding-left: 20px;
+    margin: 0%;
+    text-align: center; 
+}
+
+
+#price1{
+   margin: 0%;
+
+}
+
+#pict1{
+    padding: 20px;    
+}
+
+
+#c1:active{
+    color: red;
+    
+}
+
+p{
+    height: 20px;
+    width: auto;
+}
+
+
+
+ */
+
+
+ #contains {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #co1 {
+    width: 25%;
+
+  }
+
+  #co2 {
+
+    width: 75%;
+
+
+
+  }
+
+  #sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+  }
+
+  #sort1,
+  #sort2 {
+    padding: 10px;
+  }
+
+  #second {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+
+
+
+  }
+
+  img {
+    height: 263px;
+    width: 203px;
+  }
+
+
+  .img1offer {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+  }
+
+  #offer1 {
+    display: inline-block;
+    color: red;
+    padding-left: 20px;
+    margin: 0%;
+    text-align: center;
+  }
+
+
+  #price1 {
+    margin: 0%;
+
+  }
+
+  #pict1 {
+    padding: 20px;
+  }
+
+
+  #c1:active {
+    color: red;
+
+  }
+
+  p {
+    text-align: center;
+    height: 20px;
+    width: auto;
+  }
+#all1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#offersDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img:hover{
+    
+}
