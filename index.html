@@ -19,6 +19,16 @@
         <link rel="stylesheet" href="./styles/footer.css" />
         <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/home.css" />
+        <script type="module">
+            let nav = document.getElementById("nav");
+    
+            import navbar from "./components/navbar.js";
+            nav.innerHTML = navbar();
+    
+            let foot = document.getElementById("footer");
+            import footer from "./components/footer.js";
+            foot.innerHTML = footer();
+        </script>
     </head>
     <body>
         <nav id="nav"></nav>
@@ -314,16 +324,7 @@
         </div>
         <div id="footer"></div>
     </body>
-    <script type="module">
-        let nav = document.getElementById("nav");
-
-        import navbar from "./components/navbar.js";
-        nav.innerHTML = navbar();
-
-        let foot = document.getElementById("footer");
-        import footer from "./components/footer.js";
-        foot.innerHTML = footer();
-    </script>
+    
     <script type="module" src="./scripts/home.js"></script>
     <script src="./scripts/header.js"></script>
 </html>

@@ -102,7 +102,7 @@ function navbar() {
                             </div>
                             &nbsp;
                             &nbsp;
-                            <a href="home.html">
+                            <a href="index.html">
                                 <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
                                 alt="logo">
                             </a>
@@ -169,7 +169,7 @@ function navbar() {
                             <input type="text" placeholder="Search SOPHORA" />
                         </div>
                         <div class="mid">
-                            <a href="home.html">
+                            <a href="index.html">
                                 <img src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png"
                                 alt="name">
                             </a>
@@ -473,11 +473,11 @@ function navbar() {
                     </div>
                     <button class="gobtn">
                         <i class="fa-brands fa-google icons"></i>
-                        <p>Cobtinue With Google</p>
+                        <p>Continue With Google</p>
                     </button>
                     <button class="fbbtn">
                         <i class="fa-brands fa-facebook-f icons"></i>
-                        <p>Cobtinue With Facebook</p>
+                        <p>Continue With Facebook</p>
                     </button>
                     <p class="lasttext">By proceeding, you agree to <span>Privacy Policy</span> , <span>Terms & Conditions</span> </p>
                 </form>

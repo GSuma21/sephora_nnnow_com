@@ -47,7 +47,7 @@ function checkdetails() {
         localStorage.removeItem("bag");
         localStorage.setItem("amt", JSON.stringify(0));
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }
 
@@ -63,7 +63,7 @@ function dcheckdetails() {
         localStorage.removeItem("bag");
         localStorage.setItem("amt", JSON.stringify(0));
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }
 
