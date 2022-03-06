@@ -2,6 +2,11 @@ localStorage.setItem("data_i", JSON.stringify([]));
 localStorage.setItem("data_j", JSON.stringify([]));
 localStorage.setItem("data_k", JSON.stringify([]));
 
+let cart = JSON.parse(localStorage.getItem("bag"));
+if (cart == null) {
+    localStorage.setItem("bag", JSON.stringify([]));
+}
+
 let i = 0;
 let j = 0;
 let k = 0;
@@ -41,59 +46,61 @@ setInterval(() => {
 
 dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
         init(i);
         currentSlide = i;
     });
 });
 
 const showData_i = (i) => {
-    // console.log(data, i);
     let prodBox = document.getElementById("slide1");
     prodBox.textContent = "";
     let data = JSON.parse(localStorage.getItem("data_i"));
-    // console.log(data);
     for (let y = 0; y < 6; y++) {
         let card = document.createElement("div");
         card.setAttribute("class", "prod");
-        card.setAttribute("id", data[i].id);
+        let imgdv = document.createElement("div");
+        imgdv.setAttribute("class", "for_img");
+        let prod_img = document.createElement("img");
+        prod_img.setAttribute("class", "p_img");
+        prod_img.src = data[i].image1;
 
-        let str = `<div class="for_img">
-                        <img
-                            class="p_img"
-                            src="${data[i].image1}"
-                        />
-                        <div class="show">
-                            <div class="shopnow">
-                                <img
-                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
-                                    alt=""
-                                />
-                                <h3>SHOP </br> NNNOW</h3>
-                            </div>
-                            <div class="fav">
-                                <img
-                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
-                                    alt=""
-                                />
-                                <h3>FAVORITE</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <img
-                            src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
-                        />
-                        <h>OFFER</h>
-                    </div>
-                    <h3>${data[i].brand}</h3>
-                    <p>${data[i].title}</p>
-                    <p>Rs. ${data[i++].price}</p>
-                    <p>
-                        2 more offers
-                    </p>`;
-        card.innerHTML = str;
+        let showdv = document.createElement("div");
+        let hoverdv = document.createElement("div");
+        hoverdv.setAttribute("class", "shopnow");
+        let bag = document.createElement("img");
+        bag.src =
+            "https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png";
+        let btn = document.createElement("button");
+        btn.textContent = "ADD TO BAG";
+        hoverdv.append(bag, btn);
+        showdv.append(hoverdv);
+        // btn.setAttribute("class", "btn");
+        let prod99 = data[i];
+        btn.onclick = function () {
+            addtobag(prod99);
+        };
+
+        showdv.setAttribute("class", "show");
+        imgdv.append(prod_img, showdv);
+
+        let offerdv = document.createElement("div");
+        offerdv.setAttribute("class", "offer");
+        let offer_img = document.createElement("img");
+        let offer = document.createElement("h");
+        offer.textContent = "OFFER";
+        offerdv.append(offer_img, offer);
+
+        let brand = document.createElement("h3");
+        brand.textContent = data[i].brand;
+        let title = document.createElement("p");
+        title.textContent = `Rs. ${data[i].price}`;
+        let extra = document.createElement("p");
+        extra.textContent = "2 more offers";
+
+        card.append(imgdv, offerdv, brand, title, extra);
         prodBox.append(card);
+        i++;
     }
 };
 
@@ -106,44 +113,48 @@ const showData_j = (j) => {
     for (let y = 0; y < 3; y++) {
         let card = document.createElement("div");
         card.setAttribute("class", "prod1");
-        card.setAttribute("id", data[j].id);
+        let imgdv = document.createElement("div");
+        imgdv.setAttribute("class", "for_img");
+        let prod_img = document.createElement("img");
+        prod_img.setAttribute("class", "p_img");
+        prod_img.src = data[j].image1;
 
-        let str = `<div class="for_img">
-                        <img
-                            class="p_img"
-                            src="${data[j].image1}"
-                        />
-                        <div class="show">
-                            <div class="shopnow">
-                                <img
-                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
-                                    alt=""
-                                />
-                                <h3>SHOP </br> NNNOW</h3>
-                            </div>
-                            <div class="fav">
-                                <img
-                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
-                                    alt=""
-                                />
-                                <h3>FAVORITE</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <img
-                            src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
-                        />
-                        <h>OFFER</h>
-                    </div>
-                    <h3>${data[j].brand}</h3>
-                    <p>${data[j].title}</p>
-                    <p>Rs. ${data[j++].price}</p>
-                    <p>
-                        2 more offers
-                    </p>`;
-        card.innerHTML = str;
+        let showdv = document.createElement("div");
+        let hoverdv = document.createElement("div");
+        hoverdv.setAttribute("class", "shopnow");
+        let bag = document.createElement("img");
+        bag.src =
+            "https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png";
+        let btn = document.createElement("button");
+        btn.textContent = "ADD TO BAG";
+        hoverdv.append(bag, btn);
+        // btn.setAttribute("class", "btn");
+        showdv.append(hoverdv);
+        let prod99 = data[j];
+        btn.onclick = function () {
+            addtobag(prod99);
+        };
+
+        showdv.setAttribute("class", "show");
+        imgdv.append(prod_img, showdv);
+
+        let offerdv = document.createElement("div");
+        offerdv.setAttribute("class", "offer");
+        let offer_img = document.createElement("img");
+        let offer = document.createElement("h");
+        offer.textContent = "OFFER";
+        offerdv.append(offer_img, offer);
+
+        let brand = document.createElement("h3");
+        brand.textContent = data[j].brand;
+        let title = document.createElement("p");
+        title.textContent = `Rs. ${data[j].price}`;
+        let extra = document.createElement("p");
+        extra.textContent = "2 more offers";
+
+        card.append(imgdv, offerdv, brand, title, extra);
         prodBox.append(card);
+        j++;
     }
 };
 
@@ -156,44 +167,48 @@ const showData_k = (k) => {
     for (let y = 0; y < 6; y++) {
         let card = document.createElement("div");
         card.setAttribute("class", "prod");
-        card.setAttribute("id", data[k].id);
+        let imgdv = document.createElement("div");
+        imgdv.setAttribute("class", "for_img");
+        let prod_img = document.createElement("img");
+        prod_img.setAttribute("class", "p_img");
+        prod_img.src = data[k].image1;
 
-        let str = `<div class="for_img">
-                        <img
-                            class="p_img"
-                            src="${data[k].image1}"
-                        />
-                        <div class="show">
-                            <div class="shopnow">
-                                <img
-                                    src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png"
-                                    alt=""
-                                />
-                                <h3>SHOP </br> NNNOW</h3>
-                            </div>
-                            <div class="fav">
-                                <img
-                                    src="https://cdn4.iconfinder.com/data/icons/mayssam/512/heart-128.png"
-                                    alt=""
-                                />
-                                <h3>FAVORITE</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <img
-                            src="https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png"
-                        />
-                        <h>OFFER</h>
-                    </div>
-                    <h3>${data[k].brand}</h3>
-                    <p>${data[k].title}</p>
-                    <p>Rs. ${data[k++].price}</p>
-                    <p>
-                        2 more offers
-                    </p>`;
-        card.innerHTML = str;
+        let showdv = document.createElement("div");
+        let hoverdv = document.createElement("div");
+        hoverdv.setAttribute("class", "shopnow");
+        let bag = document.createElement("img");
+        bag.src =
+            "https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Shopping_bag-128.png";
+        let btn = document.createElement("button");
+        btn.textContent = "ADD TO BAG";
+        hoverdv.append(bag, btn);
+        // btn.setAttribute("class", "btn");
+        showdv.append(hoverdv);
+        let prod99 = data[k];
+        btn.onclick = function () {
+            addtobag(prod99);
+        };
+
+        showdv.setAttribute("class", "show");
+        imgdv.append(prod_img, showdv);
+
+        let offerdv = document.createElement("div");
+        offerdv.setAttribute("class", "offer");
+        let offer_img = document.createElement("img");
+        let offer = document.createElement("h");
+        offer.textContent = "OFFER";
+        offerdv.append(offer_img, offer);
+
+        let brand = document.createElement("h3");
+        brand.textContent = data[k].brand;
+        let title = document.createElement("p");
+        title.textContent = `Rs. ${data[k].price}`;
+        let extra = document.createElement("p");
+        extra.textContent = "2 more offers";
+
+        card.append(imgdv, offerdv, brand, title, extra);
         prodBox.append(card);
+        k++;
     }
 };
 
@@ -236,7 +251,9 @@ document.getElementById("back2").addEventListener("click", bak2);
 document.getElementById("forwrd1").addEventListener("click", forwrd1);
 document.getElementById("back1").addEventListener("click", bak1);
 
-document.getElementsByClassName("prod").addEventListener("click", see);
-function see() {
-    console.log(10);
+function addtobag(prod99) {
+    alert("We've added this product to your bag");
+    cart.push(prod99);
+    localStorage.setItem("bag", JSON.stringify(cart));
+    // console.log(cart);
 }

@@ -1,5 +1,5 @@
 {
-    "Face Foundation Cream": [
+    "Face_Foundation_Cream": [
         {
             "poster": "https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/MakeupDesktop.jpg"
         },
@@ -274,7 +274,7 @@
         },
         {
             "id": "200",
-            "path": "SEPHORA / Clarins / Women / Beauty / ",
+            "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "Extra-Firming Day Comfort Cream - Dry Skin",
             "brand": "CLARINS",
@@ -287,7 +287,7 @@
         },
         {
             "id": "201",
-            "path": "SEPHORA / Clarins / Women / Beauty / ",
+            "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "UV Plus SPF50/PA++++ Sunscreen - Pink",
             "brand": "CLARINS",
@@ -300,10 +300,10 @@
         },
         {
             "id": "202",
-            "path": "SEPHORA / Clarins / Women / Beauty / ",
+            "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "Hydra Essentiel Moisturizes And Quenches Silky Cream - Normal To Dry Skin",
-            "brand": "Clarins",
+            "brand": "CLARINS",
             "image1": "https://cdn19.nnnow.com/web-images/large/styles/2LJ12O78WZ7/1594031464988/1.jpg",
             "image2": "https://cdn00.nnnow.com/web-images/large/styles/2LJ12O78WZ7/1594031464988/2.jpg",
             "image3": "https://cdn10.nnnow.com/web-images/large/styles/2LJ12O78WZ7/1618918773846/50.jpg",
@@ -316,7 +316,7 @@
             "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "Hydra Essentiel Moisturizes And Quenches Emulsion - All Skin Types",
-            "brand": "Clarins",
+            "brand": "CLARINS",
             "image1": "https://cdn07.nnnow.com/web-images/large/styles/7PWTS6YKAIF/1594031464962/1.jpg",
             "image2": "https://cdn19.nnnow.com/web-images/large/styles/7PWTS6YKAIF/1618918773595/50.jpg",
             "image3": "Not Available",
@@ -326,7 +326,7 @@
         },
         {
             "id": "204",
-            "path": "SEPHORA / Clarins / Women / Beauty / ",
+            "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "BB Beauty Perfector SPF 30/PA+++ - 02 Natural",
             "brand": "CLARINS",
@@ -339,7 +339,7 @@
         },
         {
             "id": "205",
-            "path": "SEPHORA / Clarins / Women / Beauty / ",
+            "path": "SEPHORA / CLARINS / Women / Beauty / ",
             "cur": "Moisturizer",
             "title": "Super Moisture Balm",
             "brand": "CLARINS",

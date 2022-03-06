@@ -278,32 +278,30 @@ body {
 
 .show {
     width: 12%;
-    height: 13.5%;
+    height: 100px;
+    background-color: turquoise;
     position: absolute;
     z-index: -1;
-    background-color: turquoise;
-
-    font-size: 11px;
-    margin-top: -7%;
-    display: flex;
-}
-.show > div {
-    width: 50%;
-    height: 100%;
-    color: whitesmoke;
+    margin-top: -105px;
 }
 .shopnow {
-    margin-top: 10%;
-}
-.fav {
-    margin-top: 12%;
-}
-.show img {
-    width: 30%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.prod1 .show {
-    width: 11.5%;
+    margin-top: 25px;
+}
+.shopnow > img {
+    width: 20%;
+    height: 40%;
+}
+.shopnow > button {
+    border: none;
+    margin-top: 5px;
+    background-color: turquoise;
+    color: rgb(223, 228, 231);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .prod:hover .show,

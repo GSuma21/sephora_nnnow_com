@@ -79,7 +79,7 @@
     top: 50px;
     z-index: 11;
 }
-#sbar{
+#sbar {
     display: none;
     background: rgb(255, 255, 255);
     overflow-y: scroll;
@@ -146,13 +146,14 @@
     color: #ec008c;
     box-shadow: -1px -1px 5px rgb(163, 163, 163), 1px 1px 5px rgb(161, 161, 161);
 }
-.s1 .nav11 .left .sidebar .b2 .up{
+.s1 .nav11 .left .sidebar .b2 .up {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 15px;
 }
-.s1 .nav33 a:hover ~ .b33, .s1 .nav33 .b33:hover{
+.s1 .nav33 a:hover ~ .b33,
+.s1 .nav33 .b33:hover {
     width: 100vw;
     position: absolute;
     display: block;
@@ -160,13 +161,13 @@
     background: #fff;
     z-index: 10;
 }
-.s1 .nav33 .b33{
+.s1 .nav33 .b33 {
     display: none;
     position: relative;
     width: 80%;
     margin: auto;
 }
-.s1 .nav33 .b333{
+.s1 .nav33 .b333 {
     position: relative;
     width: 80%;
     margin: auto;
@@ -176,25 +177,25 @@
     flex-wrap: wrap;
     padding-top: 20px;
 }
-.s1 .nav33 .b333 ul{
+.s1 .nav33 .b333 ul {
     margin: 10px 40px;
 }
-.s1 .nav33 .b333 ul li{
+.s1 .nav33 .b333 ul li {
     list-style: none;
     font-size: 16px;
     line-height: 1.6;
 }
-.s1 .nav33 .b333 ul li:hover{
+.s1 .nav33 .b333 ul li:hover {
     color: #ec008c;
     cursor: pointer;
 }
-.s1 .nav11 .sidebar .b23{
+.s1 .nav11 .sidebar .b23 {
     display: none;
 }
-.s1 .nav11 .left .sidebar .b24 .right{
+.s1 .nav11 .left .sidebar .b24 .right {
     display: none;
 }
-.login{
+.login {
     top: 0;
     position: absolute;
     width: 100%;
@@ -205,34 +206,34 @@
     background: #4c4c4ccc;
     z-index: 1111;
 }
-.login form{
+.login form {
     position: absolute;
     width: 380px;
     height: 625px;
     padding: 30px 20px;
     background: #fff;
 }
-.login form .fa-xmark{
+.login form .fa-xmark {
     text-align: right;
     font-size: 20px;
     color: #ec008c;
     cursor: pointer;
 }
-.login form h1{
+.login form h1 {
     text-align: center;
     margin-bottom: 30px;
 }
-.login form .nametext{
+.login form .nametext {
     font-size: 12px;
     color: grey;
 }
-.login form input{
+.login form input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 2px solid #ec008c;
 }
-.login form .continuebtn{
+.login form .continuebtn {
     width: 100%;
     padding: 10px;
     margin: 22px 0;
@@ -246,7 +247,7 @@
     justify-content: center;
 }
 
-.login form .ortext{
+.login form .ortext {
     position: relative;
     width: 100%;
     display: flex;
@@ -254,7 +255,7 @@
     align-items: center;
     margin: 45px 0;
 }
-.login form .ortext span{
+.login form .ortext span {
     width: 43%;
     height: 2px;
     background: #000;
@@ -262,7 +263,7 @@
     justify-content: center;
     align-items: center;
 }
-.login form button{
+.login form button {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -271,13 +272,13 @@
     margin: 20px 0;
     border: none;
 }
-.login form .gobtn{
+.login form .gobtn {
     background: #4285f4;
 }
-.login form .fbbtn{
+.login form .fbbtn {
     background: #3b5998;
 }
-.login form button i{
+.login form button i {
     background: #fff;
     height: 30px;
     width: 30px;
@@ -285,52 +286,53 @@
     align-items: center;
     justify-content: center;
 }
-.login form button p{
+.login form button p {
     width: 80%;
     color: #fff;
     font-weight: bold;
 }
-.login form .lasttext{
+.login form .lasttext {
     text-align: center;
     margin-top: 50px;
     font-size: 14px;
     line-height: 1.8;
 }
-.login p span{
+.login p span {
     color: #ec008c;
     text-decoration: underline;
 }
-@media (max-width:1250px) {
+@media (max-width: 1250px) {
     .s1 .nav11,
     .s1 .nav22,
     .s1 .nav33 {
         width: 98%;
     }
 }
-@media (max-width:1000px) {
-    .s1 .nav1 .left{
+@media (max-width: 1000px) {
+    .s1 .nav1 .left {
         margin-left: 50px;
     }
     .s1 .nav1 .right,
-    .s1 .nav1 .mid{
+    .s1 .nav1 .mid {
         display: none;
     }
-    .s1 .nav11 .sidebar .b23{
+    .s1 .nav11 .sidebar .b23 {
         display: block;
     }
-    .s1 .nav11 .sidebar .right{
+    .s1 .nav11 .sidebar .right {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .s1 .nav11 .sidebar .right div{
+    .s1 .nav11 .sidebar .right div {
         margin: 15px 13px;
     }
-    .s1 .nav33 a:hover ~ .b33, .s1 .nav33 .b33:hover{
+    .s1 .nav33 a:hover ~ .b33,
+    .s1 .nav33 .b33:hover {
         left: 0;
     }
 }
-@media (max-width:860px) {
+@media (max-width: 860px) {
     .s1 .nav33 {
         width: 90%;
         /* overflow-x: scroll; */
@@ -339,20 +341,20 @@
         align-items: center;
         justify-content: flex-start;
     }
-    .s1 .nav33{
+    .s1 .nav33 {
         width: 100%;
     }
-    .s1 .nav3 .b3{
+    .s1 .nav3 .b3 {
         padding: 10px;
         font-size: 16px;
     }
-    .s1 .nav3 .b3 a{
+    .s1 .nav3 .b3 a {
         padding: 10px;
         font-size: 14px;
     }
 }
-@media (max-width:730px) {
-    .s1 .nav11 .left .sidebar .b24 .right{
+@media (max-width: 730px) {
+    .s1 .nav11 .left .sidebar .b24 .right {
         display: flex;
         flex-direction: column;
         margin: 15px 13px;
@@ -360,20 +362,20 @@
     .s1 .nav22 {
         justify-content: center;
     }
-    .s1 .nav22 .left{
+    .s1 .nav22 .left {
         display: none;
     }
-    .s1 .nav22 .mid img{
+    .s1 .nav22 .mid img {
         height: 80px;
     }
-    .s1 .nav22 .right{
+    .s1 .nav22 .right {
         display: none;
     }
-    .login form{
+    .login form {
         width: 100%;
     }
 }
-@media (max-width:560px) {
+@media (max-width: 560px) {
     .s1 .nav11 .left .sidebar {
         width: 100%;
     }

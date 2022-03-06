@@ -9,10 +9,19 @@
             rel="icon"
             href="https://static.nnnow.com/client/assets/images/nnnow-logo-200.png"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/home.css" />
     </head>
     <body>
-        <nav></nav>
+        <nav id="nav"></nav>
         <div id="main-sliding-window">
             <img
                 src="https://logan.nnnow.com/content/dam/nnnow-project/18-feb-2022/ABH_TopbannerDesktop_gif.gif"
@@ -106,7 +115,7 @@
                     />
                 </div>
                 <div class="desktop-viewall">
-                    <a href="#">VIEW ALL ></a>
+                    <a id="view1" href="product_page.html">VIEW ALL ></a>
                 </div>
                 <div id="slide1" class="slide-products"></div>
                 <div id="back-forwrd1">
@@ -131,7 +140,9 @@
                 <div id="product-video">
                     <div class="half-slide-products">
                         <div class="desktop-viewall">
-                            <a href="#">VIEW ALL ></a>
+                            <a id="view2" href="product_page.html"
+                                >VIEW ALL ></a
+                            >
                         </div>
                         <div id="slide2" class="products"></div>
                         <div id="back-forwrd2">
@@ -183,7 +194,7 @@
                     />
                 </div>
                 <div class="desktop-viewall">
-                    <a href="#">VIEW ALL ></a>
+                    <a id="view3" href="product_page.html">VIEW ALL ></a>
                 </div>
                 <div id="slide3" class="slide-products"></div>
                 <div id="back-forwrd3">
@@ -301,6 +312,18 @@
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </body>
+    <script type="module">
+        let nav = document.getElementById("nav");
+
+        import navbar from "./components/navbar.js";
+        nav.innerHTML = navbar();
+
+        let foot = document.getElementById("footer");
+        import footer from "./components/footer.js";
+        foot.innerHTML = footer();
+    </script>
     <script type="module" src="./scripts/home.js"></script>
+    <script src="./scripts/header.js"></script>
 </html>
